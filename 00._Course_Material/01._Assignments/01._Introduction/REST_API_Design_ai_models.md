@@ -3,7 +3,7 @@
 Design a REST API based on a topic we choose in class. The topic is:
 
 
-XXXX
+aimodels
 
  
 Note that you are to design and document a potential REST API that is CRUDable based on this topic. NOT implement it. 
