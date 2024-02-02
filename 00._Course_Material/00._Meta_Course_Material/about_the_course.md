@@ -9,7 +9,7 @@ Reflect on the course's title.  Besides Node.js it is:
 ## Course Components
 
 ### Homework
-- Weekly exercises that you must hand-in. Once the hand-in closes in Fronter it won’t reopen. 
+- Weekly exercises that you must hand-in. Once the hand-in closes in Teams it won’t reopen. 
 
 ### Hand-in Procedure
 - Git link to the relevant folder. 
@@ -20,7 +20,6 @@ Prerequisite to go to the exam.
 #### Mandatory I:
 - The weekly homework has been handed-in or a 1 page report on the topic for each missed hand-in. 
 - Contains write-ups about the topics we go through in class in depth. So better start taking notes and writing these things down weekly. I won’t give you the topics so part of the exercise is to research what to write about and collect the info. 
-- Done with HTML. Requires a dummy login/sign up form.
 
 
 #### Mandatory II:
