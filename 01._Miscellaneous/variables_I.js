@@ -41,3 +41,9 @@ const stringThree = `This """" '''' ${me} is one way of defining strings
 multi line string
 and here
 `;
+
+const kea = {
+    address: "Guldbergsgade",
+    // comment
+    studentsInBuilding: 204
+};
