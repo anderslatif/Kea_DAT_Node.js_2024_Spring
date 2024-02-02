@@ -21,7 +21,13 @@ hobbies.push("sleeping");
 
 me.hobbies = hobbies;
 
-console.log(me);
+// console.log(me);
 
+// Types in JS: number, string, boolean, object, null, undefined, symbol, bigintx
 
+// Object: object, arrays, date
 
+// type coercion
+
+// we ALWAYS use strict equality checks:
+// === and !==
