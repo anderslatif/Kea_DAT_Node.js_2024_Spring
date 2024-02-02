@@ -31,3 +31,13 @@ me.hobbies = hobbies;
 
 // we ALWAYS use strict equality checks:
 // === and !==
+
+
+// Strings:
+
+const stringOne = "This is one ''''''' '''  way of defining strings";
+const stringTwo = 'This is one """"  way  """ of defining strings';
+const stringThree = `This """" '''' ${me} is one way of defining strings
+multi line string
+and here
+`;
