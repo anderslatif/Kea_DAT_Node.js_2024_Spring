@@ -29,3 +29,5 @@ const runningResult = genericActionPerformer("Alex", running);
 // console.log(runningResult);
 
 console.log(genericActionPerformer("Louis", (name) => `${name} is eating.`));
+
+// in both we pass the function reference directly instead of packing it into a variable
