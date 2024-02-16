@@ -1,7 +1,9 @@
-// const express = require("express");
-// const app = express();
+const express = require("express");
+const app = express();
 
-const app = require("express")();
+// const app = require("express")();
+
+app.use(express.json());
 
 
 // route
@@ -44,13 +46,37 @@ app.get("/wallet/:withdrawalAmount", (req, res) => {
     }
 });
 
-// task:  create a route called fillUpWallet that 
-// task: allows a client to fill up the wallet with a specified amount
+
+// /saySomethingNiceAboutMe/hello?handsome=very&tall=indeed&cool=always
+app.get("/saySomethingNiceAboutMe/:greeting", (req, res) => {
+    console.log(req.params.greeting);
+    console.log(req.query);
+    if (req.query.handsome !== "very") {
+        return res.send({ data: "Ain't no thang." });
+    }
+    return res.send({ data: "Thanks cool cat" });
+});
+
+
+app.post("/postman", (req, res) => {
+    console.log(req.body);
+    res.send(req.body);
+});
 
 
 app.get("/page", (req, res) => {
     res.send("<h1>Welcome to my page</h1>");
 });
+
+// undefined, null, false, "" 
+const falsyValues = "";
+
+if (falsyValues) {
+    // console.log("Not Falsy");
+} else {
+    // console.log("Definitely Falsy");
+}
+
 
 // http: 80
 // https: 443
