@@ -11,14 +11,19 @@ app.get("/publicsquare", (req, res) => {
     res.sendFile(__dirname + "/public/publicSquare/publicSquare.html");
 });
 
-const knownName = "Anders";
+const knownNames = ["Anders", "Alice"];
 
 app.get("/greeting", (req, res) => {
-    if (req.query.name === knownName) {
-        res.send({ data: `Hello ${knownName}!` });
+    const providedName = req.params.name;
+    if (knownNames.includes(providedName)) {
+        res.send({ data: `Hello ${providedName}!` });
     } else {
         res.send({ data: "Hello stranger!" });
     }
+});
+
+app.get("/knownpeople", (req, res) => {
+    res.send({ data: knownNames.length });
 });
 
 
