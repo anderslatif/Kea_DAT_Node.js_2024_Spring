@@ -1,0 +1,27 @@
+{
+  "name": "date",
+  "version": "0.0.1",
+  "description": "Working with dates in Javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderslatif/Kea_DAT_Node.js_2024_Spring.git"
+  },
+  "keywords": [
+    "date",
+    "Javascript",
+    "Express"
+  ],
+  "author": "anderslatif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anderslatif/Kea_DAT_Node.js_2024_Spring/issues"
+  },
+  "homepage": "https://github.com/anderslatif/Kea_DAT_Node.js_2024_Spring#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
