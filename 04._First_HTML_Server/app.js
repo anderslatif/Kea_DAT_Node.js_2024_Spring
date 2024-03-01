@@ -4,6 +4,12 @@ const app = express();
 
 app.use(express.static("public"));
 
+// const helicopterFactoryFile = require("./util/helicopterFactory.js");
+// console.log(helicopterFactoryFile.helicopterFactory());
+
+const { helicopterFactory } = require("./util/helicopterFactory.js");
+console.log(helicopterFactory());
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/homepage/homepage.html");
 });

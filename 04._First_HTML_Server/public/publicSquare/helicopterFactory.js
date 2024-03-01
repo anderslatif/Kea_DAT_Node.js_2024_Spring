@@ -1,0 +1,3 @@
+function helicopterFactory() {
+    return ['🚁'];
+}
