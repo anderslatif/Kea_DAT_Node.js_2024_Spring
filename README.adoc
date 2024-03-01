@@ -1,0 +1,103 @@
+= Full Stack Node.js Semester Plan
+
+== About the course
+
+link:00._Course_Material/00._Meta_Course_Material/about_the_course.md[About the course]
+
+== Semester Plan
+
+[width="100%",cols="15%,7%,23%,30%,25%",options="header",]
+|===
+| Title | Date | Description | Learning Goals | Resources and Activities
+
+| Introduction
+| Feb. 2nd
+a|
+* Intro to the course. Information about the mandatories / exam. Expectations.
+* Intro to Node.js.
+* Variables, data types
+* Intro Exercises.
+* REST API conventions
+* Code conventions / Clean Code
+a|
+* Can work with Git in the terminal.
+* Understand and work with data types in Javascript.
+* Can explain what Node.js is and how to run files with it.
+* Knows the existing data types in Javascript and can work with them.
+* Understands type coercion and strategies to avoid it.
+* Can design a REST API.
+* Knows the three REST conventions: 1. Using the right HTTP verb, 2. Ordering, 3. Naming (noun, plural) that maps to collections in your system.
+a|
+* link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_XXXX_CHOICE_2.md[REST API Design XXXX]
+* link:00._Course_Material/01._Assignments/01._Introduction/Introduction_Exercises.md[Introduction Exercises]
+
+| First Server
+| Feb. 9th
+a|
+* Code conventions / Clean Code (Strict Mode - ESLint)
+* Variables and Functions
+* Callback functions
+* Package.json
+* Express
+* Sending data with GET requests
+a|
+* Understand scoping in Javascript and know to always use const if you can get away with it otherwise let.
+* Understand advanced things about functions in Javascript
+* Can write callback functions with different syntax.
+* Understands package.json and can set it up by hand.
+* Can create a server instance with Express from memory.
+* Understands how to send data with GET requests over HTTP and knows how to do it in Express.
+* Understands node_modules.
+a|
+* link:00._Course_Material/01._Assignments/02._First_Server/Drinks_REST_API_Part_I.md[Drinks REST API - Part I]
+
+| Serving HTML Files
+| Feb. 16th
+a|
+* Nodemon
+* Loops and loop methods in JS.
+* CRUDable REST API - Part I
+* Anatomy of an URL
+* Serving HTML in Express.
+a|
+* Understands the use case for Nodemon and its limitation for development.
+* Can use loop methods (+map, +filter, %reduce). Can choose the right one at the appropriate time:
+    We wish to use loop methods and in a functional manner (avoiding side effects).
+    for loops are for finger counting.
+* Understands why a functional approach to loops is to be preferred and how to implement it without side effects.
+* Can use the right terminology when it comes to the different parts of an URL.
+* Can make a POST request and handle it in Express.
+* Understands the need for body parsing and how to do it in Express.
+a|
+* link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/CSS_Grid_Flexbox.md[CSS_Grid_Flexbox]
+* link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/Drinks_REST_API_Part_II.md[Drinks REST API - Part II]
+
+| Time
+| Feb. 23rd
+a|
+* CRUDable REST API - Part II
+* Time
+* Deployment
+* Fetch
+a|
+* Can create a full CRUDable REST API that follows conventions.
+* Can get the Date in Javascript.
+* Can write a fetch request without hesitation.
+a|
+* link:00._Course_Material/01._Assignments/04._Time/Time_To_Deploy.md[Time to deploy]
+
+| Export / Import
+| Mar. 1st
+a|
+* Exporting vs. importing in frontend (type="module" attribute).
+* Commonjs vs. type module in Node.js
+* Serving static in Express.
+* XSS
+a|
+* Can work with both types of import/export in HTML.
+* Can import/export in both ways in Node.js
+* Understands the security need for serving static files and can do it in Express.
+* XSS: Understands the problem and how to avoid it.
+a|
+* link:00._Course_Material/01._Assignments/00_Mandatories/Mandatory_I.md[Mandatory I (Given)]
+|===
