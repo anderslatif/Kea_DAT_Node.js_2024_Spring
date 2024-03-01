@@ -1,3 +1,13 @@
 #logo {
     width: 10em;
 }
+
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}

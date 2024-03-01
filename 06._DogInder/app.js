@@ -11,11 +11,15 @@ import getMatches from "./util/matches.js";
 // ========= HTML =================
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("public/homepage/homepage.html"));
+    res.sendFile(path.resolve("public/pages/homepage/homepage.html"));
 });
 
 app.get("/matches", (req, res) => {
-    res.sendFile(path.resolve("public/matches/matches.html"));
+    res.sendFile(path.resolve("public/pages/matches/matches.html"));
+});
+
+app.get("/contact", (req, res) => {
+    res.sendFile(path.resolve("public/pages/contact/contact.html"));
 });
 
 // ========== API =================
