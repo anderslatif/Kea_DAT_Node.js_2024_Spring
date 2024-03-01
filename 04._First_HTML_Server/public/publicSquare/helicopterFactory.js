@@ -1,3 +1,3 @@
-function helicopterFactory() {
+export default function helicopterFactory() {
     return ['🚁'];
 }
