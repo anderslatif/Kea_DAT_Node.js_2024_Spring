@@ -28,8 +28,9 @@ a|
 * Can design a REST API.
 * Knows the three REST conventions: 1. Using the right HTTP verb, 2. Ordering, 3. Naming (noun, plural) that maps to collections in your system.
 a|
-* link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_XXXX_CHOICE_2.md[REST API Design XXXX]
-* link:00._Course_Material/01._Assignments/01._Introduction/Introduction_Exercises.md[Introduction Exercises]
+link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_XXXX_CHOICE_2.md[REST API Design XXXX]
+
+link:00._Course_Material/01._Assignments/01._Introduction/Introduction_Exercises.md[Introduction Exercises]
 
 | First Server
 | Feb. 9th
@@ -49,7 +50,7 @@ a|
 * Understands how to send data with GET requests over HTTP and knows how to do it in Express.
 * Understands node_modules.
 a|
-* link:00._Course_Material/01._Assignments/02._First_Server/Drinks_REST_API_Part_I.md[Drinks REST API - Part I]
+link:00._Course_Material/01._Assignments/02._First_Server/Drinks_REST_API_Part_I.md[Drinks REST API - Part I]
 
 | Serving HTML Files
 | Feb. 16th
@@ -69,8 +70,9 @@ a|
 * Can make a POST request and handle it in Express.
 * Understands the need for body parsing and how to do it in Express.
 a|
-* link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/CSS_Grid_Flexbox.md[CSS_Grid_Flexbox]
-* link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/Drinks_REST_API_Part_II.md[Drinks REST API - Part II]
+link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/CSS_Grid_Flexbox.md[CSS_Grid_Flexbox]
+
+link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/Drinks_REST_API_Part_II.md[Drinks REST API - Part II]
 
 | Time
 | Feb. 23rd
@@ -84,7 +86,7 @@ a|
 * Can get the Date in Javascript.
 * Can write a fetch request without hesitation.
 a|
-* link:00._Course_Material/01._Assignments/04._Time/Time_To_Deploy.md[Time to deploy]
+link:00._Course_Material/01._Assignments/04._Time/Time_To_Deploy.md[Time to deploy]
 
 | Export / Import
 | Mar. 1st
@@ -92,12 +94,30 @@ a|
 * Exporting vs. importing in frontend (type="module" attribute).
 * Commonjs vs. type module in Node.js
 * Serving static in Express.
-* XSS
+* Fetching in the client vs. fetching in the backend
+* Structuring HTML with semantic HTML (header, main, footer).
 a|
 * Can work with both types of import/export in HTML.
 * Can import/export in both ways in Node.js
 * Understands the security need for serving static files and can do it in Express.
-* XSS: Understands the problem and how to avoid it.
+* Can argue for a better way to structure the frontend (assets, pages) and how to structure HTML.
 a|
-* link:00._Course_Material/01._Assignments/00_Mandatories/Mandatory_I.md[Mandatory I (Given)]
+link:00._Course_Material/01._Assignments/00_Mandatories/Mandatory_I.md[Mandatory I (Given)]
+
+| Server-side vs. Client-side / Server-side Rendering (SSR)
+| Mar. 8th
+a|
+* Client-side redirection vs. server-side redirection. 
+* Server-side rendering vs. client-side rendering.
+* Reading files.
+* Nodemon ext.
+a|
+* Understands the difference between client-side redirection and server-side. 
+* Can recount the number of ways and approaches to redirection. 
+* Understands how code and its placement affects application memory and efficiency.
+* Understands the arguments for and against SSR vs. CSR when it comes to:
+1. load time
+2. ressources spent (duration, when and where)
+3. and SEO.
+a|
 |===
