@@ -4,22 +4,10 @@ const app = express();
 
 app.use(express.static("public"));
 
-import path from "path";
-
 import getMatches from "./util/matches.js";
 
-import fs from "fs";
 
-const header = fs.readFileSync("./public/components/header/header.html").toString();
-const footer = fs.readFileSync("./public/components/footer/footer.html").toString();
-
-const homepage = fs.readFileSync("./public/pages/homepage/homepage.html").toString();
-const matches = fs.readFileSync("./public/pages/matches/matches.html").toString();
-const contact = fs.readFileSync("./public/pages/contact/contact.html").toString();
-
-const homepagePage = header + homepage + footer;
-const matchesPage = header + matches + footer;
-const contactPage = header + contact + footer;
+import { homepagePage, matchesPage, contactPage } from "./util/readPages.js";
 
 
 // ========= HTML =================
