@@ -118,6 +118,7 @@ a|
 * Understands the arguments for and against SSR vs. CSR when it comes to:
 1. load time
 2. ressources spent (duration, when and where)
-3. and SEO.
+3. SEO
+3. and solving all CORS problems.
 a|
 |===
