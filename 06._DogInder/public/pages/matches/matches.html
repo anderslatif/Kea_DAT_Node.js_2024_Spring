@@ -1,99 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/water.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/pages/matches/matches.css">
 
-    <title>DogInder</title>
-</head>
-<body>
-    <nav>
-        <a href="/"><img id="logo" src="/assets/images/logo.png"></a>
-        <a href="/matches">Matches</a>
-        <a href="/contact">Contact</a>
-    </nav>
+<h1 id="dog-name"></h1>
+<h3 id="dog-bio"></h3>
+<div id="image-container"></div>
 
-    <main>
-        <h1 id="dog-name"></h1>
-        <h3 id="dog-bio"></h3>
-        <div id="image-container"></div>
-    </main>
-    
-    <!-- Firefox has problems with detecting dragend: https://github.com/hammerjs/hammer.js/issues/692 -->
-    <!-- Don't upgrade beyond version 2.0.1 https://github.com/hammerjs/hammer.js/releases/tag/2.0.1 -->
-    <script src="/pages/matches/hammer.js"></script>
+<!-- Firefox has problems with detecting dragend: https://github.com/hammerjs/hammer.js/issues/692 -->
+<!-- Don't upgrade beyond version 2.0.1 https://github.com/hammerjs/hammer.js/releases/tag/2.0.1 -->
+<script src="/pages/matches/hammer.js"></script>
 
-    <script>
-        let dogs = [];
-        const dogNameH1 = document.getElementById("dog-name");
-        const dogBioH3 = document.getElementById("dog-bio");
+<script>
+    let dogs = [];
+    const dogNameH1 = document.getElementById("dog-name");
+    const dogBioH3 = document.getElementById("dog-bio");
 
-        const imageContainerDiv = document.getElementById("image-container");
+    const imageContainerDiv = document.getElementById("image-container");
 
-        function getDogs() {
-            fetch("/api/matches")
-            .then((response) => response.json())
-            .then((result) => {
-                dogs = result.data;
+    function getDogs() {
+        fetch("/api/matches")
+        .then((response) => response.json())
+        .then((result) => {
+            dogs = result.data;
+            createImageElement(dogs.pop());
+        });
+    }
+
+    getDogs();
+
+
+    function createImageElement(dog) {
+        dogNameH1.textContent = dog.name;
+        dogBioH3.textContent = dog.bio;
+
+        const img = document.createElement('img');
+        img.src = dog.message;
+        img.id = "dog-image";
+        // Ensure vertical scrolling is not affected on touch devices
+        img.style.touchAction = 'pan-y'; 
+
+        imageContainerDiv.innerHTML = "";
+        imageContainerDiv.appendChild(img);
+
+        const dogImageImg = document.getElementById('dog-image');
+
+        setupHammerPanEvents(dogImageImg);
+    }
+
+    function setupHammerPanEvents(dogImageImg) {
+        const hammertime = new Hammer(dogImageImg);
+
+        hammertime.on('pan', (event) => {
+            // Calculate the new position based on the pan movement
+            const deltaX = event.deltaX;
+
+            // Apply the transformation to the image
+            dogImageImg.style.transform = `translateX(${deltaX}px)`;
+        });
+
+        hammertime.on('panend', (event) => {
+            if (event.deltaX > 0) {
+                console.log("Ended dragging to the right");
+                // todo: Handle end of right drag here
+            } else {
+                console.log("Ended dragging to the left");
+                // todo: Handle end of left drag here
+            }
+            if (dogs.length > 0) {
                 createImageElement(dogs.pop());
-            });
-        }
- 
-        getDogs();
-
-
-        function createImageElement(dog) {
-            dogNameH1.textContent = dog.name;
-            dogBioH3.textContent = dog.bio;
-
-            const img = document.createElement('img');
-            img.src = dog.message;
-            img.id = "dog-image";
-            // Ensure vertical scrolling is not affected on touch devices
-            img.style.touchAction = 'pan-y'; 
-
-            imageContainerDiv.innerHTML = "";
-            imageContainerDiv.appendChild(img);
-
-            const dogImageImg = document.getElementById('dog-image');
-
-            setupHammerPanEvents(dogImageImg);
-        }
-
-        function setupHammerPanEvents(dogImageImg) {
-            const hammertime = new Hammer(dogImageImg);
-
-            hammertime.on('pan', (event) => {
-                // Calculate the new position based on the pan movement
-                const deltaX = event.deltaX;
-
-                // Apply the transformation to the image
-                dogImageImg.style.transform = `translateX(${deltaX}px)`;
-            });
-
-            hammertime.on('panend', (event) => {
-                if (event.deltaX > 0) {
-                    console.log("Ended dragging to the right");
-                    // todo: Handle end of right drag here
-                } else {
-                    console.log("Ended dragging to the left");
-                    // todo: Handle end of left drag here
-                }
-                if (dogs.length > 0) {
-                    createImageElement(dogs.pop());
-                } else {
-                    getDogs();
-                }
-            });
-        }
-    </script>
-
-    <footer>
-        <p id="copyright-year"></p>
-    </footer>
-    <script src="/assets/js/footer.js"></script>
-</body>
-</html>
+            } else {
+                getDogs();
+            }
+        });
+    }
+</script>
