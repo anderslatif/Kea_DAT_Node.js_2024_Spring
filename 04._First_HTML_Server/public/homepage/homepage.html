@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="3;/publicsquare" /> -->
     <link rel="stylesheet" href="./homepage/homepage.css">
     <style>
         h1 {
@@ -26,6 +27,14 @@
 
     <a href="/publicsquare">Public Square</a>
 
+
+    <script>
+        // assignment redirect dynamically to /publicsquare after 3 seconds on the page
+
+        setTimeout(() => window.location.href = "/publicsquare", 3000);
+        // setTimeout(() => window.location.replace("/publicsquare"), 3000);
+
+    </script>
     <script>
         const nameInput = document.getElementById("name-input");
         const greetingH2 = document.getElementById("greeting-text");

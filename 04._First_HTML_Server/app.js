@@ -18,6 +18,18 @@ app.get("/publicsquare", (req, res) => {
     res.sendFile(__dirname + "/public/publicSquare/publicSquare.html");
 });
 
+app.get("/treasuretrove", (req, res) => {
+    res.send({ data: "You found it!" });
+});
+
+app.get("/secretpassphrase", (req, res) => {
+    if (req.query.passphrase !== "SesameOpenUp") {
+        res.status(400).send({ data: "Wrong passphrase" });
+    } else {
+        res.redirect("/treasuretrove");
+    }
+});
+
 const knownNames = ["Anders", "Alice"];
 
 app.get("/greeting", (req, res) => {
