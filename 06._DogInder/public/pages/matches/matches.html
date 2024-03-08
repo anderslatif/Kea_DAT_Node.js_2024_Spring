@@ -16,7 +16,6 @@
         <a href="/contact">Contact</a>
     </nav>
 
-    <!-- assignment take each dogs' name and bio and show it below -->
     <main>
         <h1 id="dog-name"></h1>
         <h3 id="dog-bio"></h3>
@@ -29,6 +28,8 @@
 
     <script>
         let dogs = [];
+        const dogNameH1 = document.getElementById("dog-name");
+        const dogBioH3 = document.getElementById("dog-bio");
 
         const imageContainerDiv = document.getElementById("image-container");
 
@@ -45,6 +46,9 @@
 
 
         function createImageElement(dog) {
+            dogNameH1.textContent = dog.name;
+            dogBioH3.textContent = dog.bio;
+
             const img = document.createElement('img');
             img.src = dog.message;
             img.id = "dog-image";
