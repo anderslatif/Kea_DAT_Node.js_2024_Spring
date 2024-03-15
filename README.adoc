@@ -121,4 +121,21 @@ a|
 3. SEO
 3. and solving all CORS problems.
 a|
+
+| Environment Variables / Asynchronous Code
+| Mar. 15th
+a|
+* Environment variables 
+* Linting
+* Debugging
+* Nodemon ext.
+* Routers (Express).
+
+a|
+* Can define and run scripts
+* Knows how to define environment variables natively in Node.js.
+* While using a linter is not a requirement, having clean code is.
+* Can create an Express Router by heart.
+a|
+
 |===
