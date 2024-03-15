@@ -128,11 +128,13 @@ a|
 * Linting
 * Debugging
 * Nodemon ext.
+* Asynchronous code in JS. 
 * Routers (Express).
 
 a|
 * Can define and run scripts
 * While using a linter is not a requirement, having clean code is.
+* Can work with promises, async/await. Understand why asynchronous code is relevant in Node.js.
 * Can create an Express Router by heart.
 a|
 
