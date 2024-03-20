@@ -157,5 +157,19 @@ link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_S
 
 link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_Svelte_Project/login_signup.md[Login / Signup]
 
+
+| Holiday
+| Mar. 29th
+|
+|
+|
+
+
+| 08. Svelte Family
+| Apr. 5th
+|
+|
+|
+
 |===
 
