@@ -10,7 +10,7 @@ link:00._Course_Material/00._Meta_Course_Material/about_the_course.md[About the 
 |===
 | Title | Date | Description | Learning Goals | Resources and Activities
 
-| Introduction
+| 01. Introduction
 | Feb. 2nd
 a|
 * Intro to the course. Information about the mandatories / exam. Expectations.
@@ -32,7 +32,7 @@ link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_XXXX_C
 
 link:00._Course_Material/01._Assignments/01._Introduction/Introduction_Exercises.md[Introduction Exercises]
 
-| First Server
+| 02. First Server
 | Feb. 9th
 a|
 * Code conventions / Clean Code (Strict Mode - ESLint)
@@ -52,7 +52,7 @@ a|
 a|
 link:00._Course_Material/01._Assignments/02._First_Server/Drinks_REST_API_Part_I.md[Drinks REST API - Part I]
 
-| Serving HTML Files
+| 03. Serving HTML Files
 | Feb. 16th
 a|
 * Nodemon
@@ -74,7 +74,7 @@ link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/CSS_Grid_Flexbox
 
 link:00._Course_Material/01._Assignments/03._Serving_HTML_Files/Drinks_REST_API_Part_II.md[Drinks REST API - Part II]
 
-| Time
+| 04. Time
 | Feb. 23rd
 a|
 * CRUDable REST API - Part II
@@ -88,7 +88,7 @@ a|
 a|
 link:00._Course_Material/01._Assignments/04._Time/Time_To_Deploy.md[Time to deploy]
 
-| Export / Import
+| 5. Export / Import
 | Mar. 1st
 a|
 * Exporting vs. importing in frontend (type="module" attribute).
@@ -104,7 +104,7 @@ a|
 a|
 link:00._Course_Material/01._Assignments/00_Mandatories/Mandatory_I.md[Mandatory I (Given)]
 
-| Server-side vs. Client-side / Server-side Rendering (SSR)
+| 05. Server-side vs. Client-side / Server-side Rendering (SSR)
 | Mar. 8th
 a|
 * Client-side redirection vs. server-side redirection. 
@@ -116,13 +116,14 @@ a|
 * Can recount the number of ways and approaches to redirection. 
 * Understands how code and its placement affects application memory and efficiency.
 * Understands the arguments for and against SSR vs. CSR when it comes to:
-1. load time
-2. ressources spent (duration, when and where)
-3. SEO
-3. and solving all CORS problems.
+1. Load time.
+2. Ressources spent (duration, when and where).
+3. SEO.
+4. Dealing with CORS. (SSR has no CORS issues.)
 a|
 
-| Environment Variables / Asynchronous Code
+
+| 06. Asynchronous Code / Routers
 | Mar. 15th
 a|
 * Linting
@@ -130,12 +131,31 @@ a|
 * Nodemon ext.
 * Asynchronous code in JS. 
 * Routers (Express).
-
 a|
-* Can define and run scripts
 * While using a linter is not a requirement, having clean code is.
 * Can work with promises, async/await. Understand why asynchronous code is relevant in Node.js.
 * Can create an Express Router by heart.
 a|
 
+
+| 07. Environment Variables / Forms / First Svelte Project
+| Mar. 22nd
+a|
+* Environment Variables
+* Forms 
+* First Svelte Project
+
+a|
+* Can define and run package.json scripts
+* Know how to define environment variables natively in Node.js.
+* Understand how forms work.
+* Can create a Svelte project from scratch with `npm create vite`.
+* Understands the structure of a Svelte project and can explain it what each file does.
+
+a|
+link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_Svelte_Project/Svelte_interactive_tutorials.md[Svelte interactive tutorials]
+
+link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_Svelte_Project/login_signup.md[Login / Signup]
+
 |===
+
