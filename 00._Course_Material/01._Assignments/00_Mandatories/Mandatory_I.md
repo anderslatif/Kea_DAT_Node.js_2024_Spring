@@ -6,7 +6,7 @@ Create a website that contains documentation for what you have learned so far.
 
 **Feedback**: There will be feedback. Feel free to also share the website on the general Teams channel so others can see it.
 
-**Hand-in type**: Git link on Fronter
+**Hand-in type**: Git link in Teams
 
 **Deadline**: March 22nd.
 
