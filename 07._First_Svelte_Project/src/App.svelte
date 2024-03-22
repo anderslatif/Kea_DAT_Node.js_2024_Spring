@@ -1,6 +1,10 @@
+<script>
+  import Greeter from "./components/Greeter/Greeter.svelte";
+
+</script>
 
 <main>
-  <h1>HELLO ??? sdfdsfsdfd</h1>
+  <Greeter></Greeter>
 </main>
 
 
