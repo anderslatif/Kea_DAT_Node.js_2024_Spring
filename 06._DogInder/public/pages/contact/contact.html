@@ -2,13 +2,13 @@
 
 <form action="/api/contact" method="POST">
     <label for="name">Name</label>
-    <input id="name" type="text" required placeholder="Your Name" value="Bob Aliceson">
+    <input id="name" name="name" type="text" required placeholder="Your Name">
 
     <label for="email">Email Address</label>
-    <input id="email" type="email" required placeholder="Your Email Address" value="Some Value">
+    <input id="email" name="email" type="email" required placeholder="Your Email Address">
 
     <label for="message">Message</label>
-    <textarea id="message" cols="80" rows="10"></textarea>
+    <textarea id="message" name="message" cols="80" rows="10"></textarea>
     
-    <button  aria-label="Submit Form">Submit</button>
+    <button aria-label="Submit Form">Submit</button>
 </form>
