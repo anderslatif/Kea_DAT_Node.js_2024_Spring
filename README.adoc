@@ -159,7 +159,7 @@ link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_S
 
 
 | Holiday
-| Mar. 29th
+| 
 |
 |
 |
