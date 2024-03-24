@@ -143,12 +143,14 @@ a|
 a|
 * Environment Variables
 * Forms 
+* Accessibility
 * First Svelte Project
 
 a|
 * Can define and run package.json scripts
 * Know how to define environment variables natively in Node.js.
 * Understand how forms work.
+* Care about accessibility and be familiar with ways to make HTML accessible.
 * Can create a Svelte project from scratch with `npm create vite`.
 * Understands the structure of a Svelte project and can explain it what each file does.
 
