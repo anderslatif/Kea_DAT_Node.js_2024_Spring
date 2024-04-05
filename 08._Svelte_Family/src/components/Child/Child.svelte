@@ -14,9 +14,9 @@
         };
         // fridgeMessages.set([...$fridgeMessages, newFridgeMessage]);
 
-        fridgeMessages.update((fridgeMessagesStoreValue) => {
-            fridgeMessagesStoreValue.push(newFridgeMessage);
-            return fridgeMessagesStoreValue;
+        fridgeMessages.update((fridgeMessageStoreValue) => {
+            fridgeMessageStoreValue.push(newFridgeMessage);
+            return fridgeMessageStoreValue;
         });
 
         fridgeMessageInputValue = "";
@@ -41,7 +41,7 @@
 
     <button on:click={() => onShowLove(child.name)}>Show Love 💚</button>
     <br>
-    <button on:click={() => onTakeFromTreasureChest(child.name)}>Take from treasure chest</button>
+    <button on:click={onTakeFromTreasureChest}>Take from treasure chest</button>
 </div>
 
 
