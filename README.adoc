@@ -178,5 +178,7 @@ link:00._Course_Material/01._Assignments/08._Svelte_Family/Component_Hierarchy.m
 
 link:00._Course_Material/01._Assignments/08._Svelte_Family/send_emails.md[Send Emails]
 
+link:00._Course_Material/01._Assignments/08._Svelte_Family/toast_notifications.md[Toast Notifications]
+
 |===
 
