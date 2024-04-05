@@ -12,7 +12,13 @@
             creator: child.name,
             message: fridgeMessageInputValue
         };
-        fridgeMessages.set([...$fridgeMessages, newFridgeMessage]);
+        // fridgeMessages.set([...$fridgeMessages, newFridgeMessage]);
+
+        fridgeMessages.update((fridgeMessagesStoreValue) => {
+            fridgeMessagesStoreValue.push(newFridgeMessage);
+            return fridgeMessagesStoreValue;
+        });
+
         fridgeMessageInputValue = "";
 
     }

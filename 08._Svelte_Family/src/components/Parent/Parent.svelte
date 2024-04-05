@@ -14,6 +14,8 @@
         treasureChest.pop();
         treasureChest = treasureChest;
     }
+
+    // assignment give parents the power to wipe the fridge
 </script>
 
 <h1>{parentName}</h1>
