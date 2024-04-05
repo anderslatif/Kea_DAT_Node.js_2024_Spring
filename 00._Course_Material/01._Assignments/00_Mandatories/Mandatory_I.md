@@ -22,6 +22,8 @@ It's very apparent to me you get ChatGPT to generate your descriptions. Don't do
 
 > Note: We will cover SSR just before the final deadline. Create it as a normal client-side rendered website and then refactor later. Do not procrastinate since the refactoring itself will take time. Just create it like we create websites so far in the course. 
 
+While you are allowed to draw inspiration from my solution, it is appreciated more if you build upon it to fit your advanced use case or completely create your own version. 
+
 - Split up the documentation in pages rather than one long HTML page.
 
 - Should have some nice styling (custom or with a styling framework).

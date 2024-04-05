@@ -28,7 +28,7 @@ a|
 * Can design a REST API.
 * Knows the three REST conventions: 1. Using the right HTTP verb, 2. Ordering, 3. Naming (noun, plural) that maps to collections in your system.
 a|
-link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_XXXX_CHOICE_2.md[REST API Design XXXX]
+link:00._Course_Material/01._Assignments/01._Introduction/REST_API_Design_ai_models.md[REST API Design AI Models]
 
 link:00._Course_Material/01._Assignments/01._Introduction/Introduction_Exercises.md[Introduction Exercises]
 
@@ -143,14 +143,12 @@ a|
 a|
 * Environment Variables
 * Forms 
-* Accessibility
 * First Svelte Project
 
 a|
 * Can define and run package.json scripts
 * Know how to define environment variables natively in Node.js.
 * Understand how forms work.
-* Care about accessibility and be familiar with ways to make HTML accessible.
 * Can create a Svelte project from scratch with `npm create vite`.
 * Understands the structure of a Svelte project and can explain it what each file does.
 
@@ -169,9 +167,16 @@ link:00._Course_Material/01._Assignments/07._Environment_Variables-Forms-First_S
 
 | 08. Svelte Family
 | Apr. 5th
-|
-|
-|
+a|
+* Passing data between components. 
+* Svelte stores
+a|
+* Understand the tree structure of web frameworks (parent/child). 
+* Fully understand the different ways to pass data in Svelte. Can code it too.
+a|
+link:00._Course_Material/01._Assignments/08._Svelte_Family/Component_Hierarchy.md[Svelte Family - Component Hierarchy]
+
+link:00._Course_Material/01._Assignments/08._Svelte_Family/send_emails.md[Send Emails]
 
 |===
 
