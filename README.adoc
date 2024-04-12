@@ -188,6 +188,7 @@ a|
 * Rate-limiter
 * Express session
 * XSS
+* Helmet
 * Client Routing (Svelte Navigator)
 a|
 * Understands how middleware works in Express, why order matters and how to use it to your advantage. 

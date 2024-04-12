@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try to attack me</title>
+</head>
+<body>
+
+    <div id="wrapper"></div>
+
+    <input id="message" placeholder="Type a message">
+    <button onclick="submitMessage()">Submit Message</button>
+    
+    <script src="./sanitizeXSS.js"></script>
+    <script>
+        const wrapperDiv = document.getElementById("wrapper");
+
+        // wrapperDiv.innerHTML = `
+        //     <img src="x" onerror="alert('XSS')" />
+        // `;
+    
+
+        const messageInput = document.getElementById("message");
+        async function submitMessage() {
+            const messageBody = JSON.stringify({ message: messageInput.value });
+            await fetch("/messages", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: messageBody
+            });
+            showMessages();
+        }
+
+        async function showMessages() {
+            const response = await fetch("/messages");
+            const result = await response.json();
+
+            const htmlString = result.data.map((message) => `<p>${message}</p>`).join(""); 
+            wrapperDiv.innerHTML = htmlString;
+        }
+
+    </script>
+</body>
+</html>

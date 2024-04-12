@@ -1,6 +1,23 @@
+import "dotenv/config";
+// import dotenv from "dotenv";
+// dotenv.config();
+
 import express from "express";
 const app = express();
 
+app.use(express.static("public"));
+
+app.use(express.json());
+
+import session from "express-session";
+
+
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false }
+}));
 
 
 import { rateLimit } from 'express-rate-limit'
@@ -31,12 +48,21 @@ app.use("/auth", authRateLimiter);
 // app.use(ipLogger);
 
 
+import helmet from "helmet";
+app.use(helmet());
+
 
 import middlewareRouter from "./routers/middlewareRouter.js";
 app.use(middlewareRouter);
 
 import authRouter from "./routers/authRouter.js";
 app.use(authRouter);
+
+import sessionRouter from "./routers/sessionRouter.js";
+app.use(sessionRouter);
+
+import xssRouter from "./routers/xssRouter.js";
+app.use(xssRouter);
 
 
 app.get("*", (req, res) => {
