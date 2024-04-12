@@ -12,7 +12,7 @@ function isAdmin(req, res, next) {
     next();
 }
 
-router.get("/lockedRoom", isAdmin, (req, res) => {
+router.get("/auth/lockedRoom", isAdmin, (req, res) => {
     console.log(req.isAdmin, req.user);
     res.send({ message: "You are in the locked room" });
 });
