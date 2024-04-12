@@ -102,7 +102,7 @@ a|
 * Understands the security need for serving static files and can do it in Express.
 * Can argue for a better way to structure the frontend (assets, pages) and how to structure HTML.
 a|
-link:00._Course_Material/01._Assignments/00_Mandatories/Mandatory_I.md[Mandatory I (Given)]
+link:00._Course_Material/01._Assignments/00._Mandatories/Mandatory_I.md[Mandatory I (Given)]
 
 | 05. Server-side vs. Client-side / Server-side Rendering (SSR)
 | Mar. 8th
@@ -179,6 +179,31 @@ link:00._Course_Material/01._Assignments/08._Svelte_Family/Component_Hierarchy.m
 link:00._Course_Material/01._Assignments/08._Svelte_Family/send_emails.md[Send Emails]
 
 link:00._Course_Material/01._Assignments/08._Svelte_Family/toast_notifications.md[Toast Notifications]
+
+
+| 09. Middleware / Security
+| Apr. 12th
+a|
+* Writing custom middleware in Express.
+* Rate-limiter
+* Express session
+* XSS
+* Client Routing (Svelte Navigator)
+a|
+* Understands how middleware works in Express, why order matters and how to use it to your advantage. 
+* Can use a rate-limiter.
+* Understands how server sessions work.
+* Understand the dangers of XSS and how to prevent it in frontend (avoiding innnerHTML) and backend (sanitizing).
+* Understand and can set up client routing in a web framework.
+a|
+Mandatory II: Initialize frontend and backend. Creates routes in the backend. 
+link:00._Course_Material/01._Assignments/00._Mandatories/Mandatory_II.md[Mandatory II Given]
+
+link:https://www.youtube.com/watch?v=UBUNrFtufWo[VIDEO: Session vs. Token authentication]
+
+Short but sweet. Watch it multiple times and take notes:
+link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[VIDEO: Database Paradigms]
+
 
 |===
 
