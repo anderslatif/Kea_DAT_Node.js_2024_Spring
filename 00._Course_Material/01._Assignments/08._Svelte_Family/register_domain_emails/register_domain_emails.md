@@ -1,4 +1,4 @@
-# Register domains and emails
+# [Optional] Register domains and emails
 
 Note that this it is outside of the learning goals to actually send out emails. It is allowed to fake it with `nodemailer` or the `resend` boarding mail. 
 
