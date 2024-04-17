@@ -178,32 +178,52 @@ link:00._Course_Material/01._Assignments/08._Svelte_Family/Component_Hierarchy.m
 
 link:00._Course_Material/01._Assignments/08._Svelte_Family/send_emails.md[Send Emails]
 
+link:00._Course_Material/01._Assignments/08._Svelte_Family/register_domain_emails/register_domain_emails.md[Optional: Register Domain + Emails]
+
 link:00._Course_Material/01._Assignments/08._Svelte_Family/toast_notifications.md[Toast Notifications]
 
 
-| 09. Middleware / Security
+| 09. Client-side Routing / Middleware
 | Apr. 12th
 a|
+* Client Routing (Svelte Navigator)
 * Writing custom middleware in Express.
 * Rate-limiter
 * Express session
 * XSS
-* Helmet
-* Client Routing (Svelte Navigator)
+* Dotenv
 a|
+* Understand and can set up client routing in a web framework.
 * Understands how middleware works in Express, why order matters and how to use it to your advantage. 
 * Can use a rate-limiter.
 * Understands how server sessions work.
 * Understand the dangers of XSS and how to prevent it in frontend (avoiding innnerHTML) and backend (sanitizing).
-* Understand and can set up client routing in a web framework.
+* Understands the role of Dotenv.
+* Can argue about the pros and cons of JWT vs. session. 
 a|
-Mandatory II: Initialize frontend and backend. Creates routes in the backend. 
 link:00._Course_Material/01._Assignments/00._Mandatories/Mandatory_II.md[Mandatory II Given]
 
-link:https://www.youtube.com/watch?v=UBUNrFtufWo[VIDEO: Session vs. Token authentication]
 
-Short but sweet. Watch it multiple times and take notes:
-link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[VIDEO: Database Paradigms]
+| 10. Full stack / SQL
+| Apr. 19th
+a|
+* Client-side routing (Svelte Navigator)
+* Full stack
+* link:00._Course_Material/01._Assignments/10._Full_stack-SQL/CORS.md[CORS]
+* SQL
+* DDL
+a|
+* Understand and can set up client routing in a web framework.
+* Can use fetch in Svelte with onMount (to avoid a reactive loop).
+* Understands why CORS exists and the situations that trigger it. 
+* Understand when it's CSR and when it's SSR and the pros and cons in relation to CORS and session id.
+* Can solve CORS issues in Express.
+* Know how to SSR Svelte from Express.
+* Understands the difference between DDL and DML.
+* Can come up with a way to define DDL on a relational database.
+* Understands why seed a database. 
+a|
+Mandatory II: Setup the full stack project, create routing in the frontend and setup protected routes. Flesh out the backend. 
 
 
 |===

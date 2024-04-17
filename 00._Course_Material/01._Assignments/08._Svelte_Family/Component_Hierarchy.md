@@ -1,4 +1,4 @@
-# Component Hierarchy
+`# Component Hierarchy
 
 ## SVG
 
