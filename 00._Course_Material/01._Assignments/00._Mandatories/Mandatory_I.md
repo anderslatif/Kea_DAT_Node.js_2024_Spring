@@ -36,10 +36,5 @@ While you are allowed to draw inspiration from my solution, it is appreciated mo
 
 - Should contain all the tools we’ve used and explain them.
 
-- Should cover all the theory that we’ve touched upon.
+- Should cover all the theory (learning goals) that we’ve touched upon.
 
-### Bonus:
-
-- Research a covered topic in-depth that you want to understand better.
-
-- Learn something new and document it.
