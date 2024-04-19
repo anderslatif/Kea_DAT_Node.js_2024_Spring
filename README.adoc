@@ -223,7 +223,7 @@ a|
 * Can come up with a way to define DDL on a relational database.
 * Understands why seed a database. 
 a|
-Mandatory II: Setup the full stack project, create routing in the frontend and setup protected routes. Flesh out the backend. 
+Mandatory II: Setup the full stack project, create routing in the frontend and setup protected routes. Create fetches between the frontend and backend. Keep the data in memory in the backend for now.  
 
 
 |===
