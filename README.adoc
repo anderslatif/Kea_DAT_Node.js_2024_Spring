@@ -204,14 +204,12 @@ a|
 link:00._Course_Material/01._Assignments/00._Mandatories/Mandatory_II.md[Mandatory II Given]
 
 
-| 10. Full stack / SQL
+| 10. Full stack
 | Apr. 19th
 a|
 * Client-side routing (Svelte Navigator)
 * Full stack
 * link:00._Course_Material/01._Assignments/10._Full_stack-SQL/CORS.md[CORS]
-* SQL
-* DDL
 a|
 * Understand and can set up client routing in a web framework.
 * Can use fetch in Svelte with onMount (to avoid a reactive loop).
@@ -219,12 +217,16 @@ a|
 * Understand when it's CSR and when it's SSR and the pros and cons in relation to CORS and session id.
 * Can solve CORS issues in Express.
 * Know how to SSR Svelte from Express.
-* Understands the difference between DDL and DML.
-* Can come up with a way to define DDL on a relational database.
-* Understands why seed a database. 
 a|
 Mandatory II: Setup the full stack project, create routing in the frontend and setup protected routes. Create fetches between the frontend and backend. Keep the data in memory in the backend for now.  
 
+
+// * SQL
+// * DDL
+
+// * Understands the difference between DDL and DML.
+// * Can come up with a way to define DDL on a relational database.
+// * Understands why seed a database. 
 
 |===
 
