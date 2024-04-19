@@ -22,7 +22,7 @@ Recommendation: Even though it is individual, try to hack each other’s local s
 
 - Add notifications. The project should have at least one. You could use 	one of these libraries: https://github.com/CodeSeven/toastr  https://github.com/kbrgl/svelte-french-toast
 
-- Email should be "sent out" with Nodemailer. Sending with Ethereal mail is allowed. Only 1 type of email is required but here are suggestions for different types of emails: 1. sign up, 2. first login, 3. forgot password etc.
+- Email should be sent out or "sent out". I have provided tutorials for Nodemailer, Resend but you are free to use other service. Only 1 type of email is required but here are suggestions for different types of emails: 1. sign up, 2. first login, 3. forgot password etc.
 
 ### Backend:
 

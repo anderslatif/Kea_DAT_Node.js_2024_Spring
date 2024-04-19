@@ -1,0 +1,12 @@
+
+import livereload from 'livereload';
+import connectLivereload from 'connect-livereload';
+
+const liveReloadServer = livereload.createServer();
+liveReloadServer.server.once("connection", () => {
+setTimeout(() => {
+    liveReloadServer.refresh("/");
+}, 100);
+});
+
+app.use(connectLivereload());
