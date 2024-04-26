@@ -1,6 +1,6 @@
 import db from "./connection.js";
 
-const isDeleteMode = true;
+const isDeleteMode = process.argv.includes('delete');
 
 if (isDeleteMode) {
     await db.run(`DROP TABLE IF EXISTS volcanoes;`);
@@ -15,6 +15,7 @@ await db.exec(`CREATE TABLE IF NOT EXISTS volcanoes (
     type TEXT CHECK( type IN ('Caldera', 'Underwater', 'Underground', 'Super Volcanoe') )
 )
 `);
+
 await db.exec(`CREATE TABLE IF NOT EXISTS villages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
