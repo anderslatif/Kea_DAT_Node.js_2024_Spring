@@ -15,8 +15,10 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "husky": "^9.0.11",
     "is-ci": "^3.0.1",
-    "svelte-navigator": "^3.2.2"
+    "svelte-navigator": "^3.2.2",
+    "svelte-routing": "^2.12.0"
   }
 }
