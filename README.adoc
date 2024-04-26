@@ -239,6 +239,9 @@ Mandatory II: Finish the mandatory.
 
 link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
+Multiple views is recommended. 
+link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[Database Paradigms]
+
 
 |===
 
