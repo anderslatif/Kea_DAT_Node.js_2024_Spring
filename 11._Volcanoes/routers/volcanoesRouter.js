@@ -13,17 +13,17 @@ router.post("/api/volcanoes", async (req, res) => {
     const { name, isActive, type } = req.body;
 
     if (!name) {
-        res.status(400).send({ data: "Missing key in body: name" });
+        return res.status(400).send({ data: "Missing key in body: name" });
     }
     if (isActive === undefined || isActive === null) {
-        res.status(400).send({ data: "Missing key in body: isActive" });
+        return res.status(400).send({ data: "Missing key in body: isActive" });
     }
     if (!type) {
-        res.status(400).send({ data: "Missing key in body: type" });
+        return res.status(400).send({ data: "Missing key in body: type" });
     }
 
     const result = await db.run(`INSERT INTO volcanoes (name, is_active, type) 
-                                VALUES ('${name}', '${isActive}', '${type}')`);
+                                VALUES (?, ?, ?)`, [name, isActive, type]);
 
     res.send({ lastId: result.lastID });
 });
