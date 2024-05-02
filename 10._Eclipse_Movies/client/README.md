@@ -35,8 +35,3 @@ Then install the packages locally:
 ```bash
 $ npm install husky is-ci
 ```
-
-Then run the following command:
-
-```bash
-```

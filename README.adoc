@@ -237,10 +237,29 @@ a|
 a|
 Mandatory II: Finish the mandatory. 
 
+I recommend you watch this mltiple times
+link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[Video: Database Paradigms]
+
 link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
-Multiple views is recommended. 
-link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[Database Paradigms]
+
+| 11. MongoDB
+| May 3rd
+a|
+* Databases paradigms
+* Mongodb vs. relational.
+* MongoDB in shell. 
+* MongoDB in Node.js
+* MongoDB in cloud (Atlas)
+a|
+* Knows different database paradigms. 
+* Can argue in what cases Mongodb excels and when it is the right choice. 
+* Can contrast and compare relational databases and Mongodb. 
+* Understands the moving part of Mongodb (database, shell, driver). 
+* Can do basic CRUD with MongoDB by heart.
+* Can use MongoDB in Node.js given a code snippet for how to set it up.
+a|
+
 
 
 |===
