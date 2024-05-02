@@ -237,7 +237,7 @@ a|
 a|
 Mandatory II: Finish the mandatory. 
 
-I recommend you watch this mltiple times
+I recommend that you watch this multiple times:
 link:https://www.youtube.com/watch?v=W2Z7fbCLSTw[Video: Database Paradigms]
 
 link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
