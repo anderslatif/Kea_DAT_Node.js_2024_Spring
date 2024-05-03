@@ -1,0 +1,40 @@
+MySQL     vs.     MongoDB
+databases         databases
+tables            collections
+row               JSON
+column            key
+cell              value
+
+
+# When to use MongoDB
+1. Variables schema
+2. Need to get started quickly (MVP)
+3. Frankenstein (MongoDB for logging)
+4. MongoDB requires logic and validation in the application layer. 
+        MySQL is better for companies with developers of variable skills
+
+
+# How to achieve relations in MongoDB:
+1. Create a key in one object that can be used to look up in another object in another collections
+
+2. Denormalization 
+
+
+# Commands
+MySQL     vs.     MongoDB
+SHOW DATABASES    show dbs
+CREATE / USE ..   use <db_name>
+CREATE TABLE      db.createCollection("<collection_name>")
+
+Shorthand: db.<collection_name>
+
+# CRUD
+MySQL     vs.     MongoDB
+SELECT            find, find({ <key>: <search_criteria> })
+INSERT            insertOne, insertMany
+UPDATE            updateOne, updateMany    updateOne({ <key>: <search_criteria> }, { $set: { <key>: <update_with_value> } })
+DELETE            deleteOne, deleteMany
+
+
+# assignment: Create a brands collection and train how to do CRUD
+
