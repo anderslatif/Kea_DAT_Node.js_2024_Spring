@@ -12,7 +12,7 @@ You are not allowed to reuse Mandatory I.
 
 ## Hard requirements
 
-You must to fulfill these requirements to pass the exam:
+These are the minimum requirement. The project must contain these elements:
 
 ### Backend
 
@@ -50,7 +50,7 @@ Whether the project is hosted or not the project must be production ready which 
 
 * the code shouldn’t be littered with console logs, unused code, unfinished snippets etc.
 
-* the product must be legal and conform to GDPR. 
+* Consider making the website legal by conforming to GDPR. 
 
 ---
 ---
