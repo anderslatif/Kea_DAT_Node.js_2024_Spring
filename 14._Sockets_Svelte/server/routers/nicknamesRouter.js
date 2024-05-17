@@ -3,7 +3,6 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/nicknames", (req, res) => {
-    console.log(req.session);
     res.send({ data: req.session.nickname });
 });
 

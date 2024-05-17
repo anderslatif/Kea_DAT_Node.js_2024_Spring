@@ -3,6 +3,9 @@ import "dotenv/config";
 import express from "express";
 const app = express();
 
+import path from "path";
+app.use(express.static(path.resolve("../client/dist")));
+
 app.use(express.json());
 
 import cors from "cors";
@@ -34,9 +37,13 @@ const io = new Server(server, {
     }
 });
 
+io.engine.use(sessionMiddleware);
+
 io.on("connection", (socket) => {
 
     socket.on("client-sends-color", (data) => {
+        data.nickname = socket.request.session.nickname;
+        
         io.emit("server-sends-color", data);
     });
 

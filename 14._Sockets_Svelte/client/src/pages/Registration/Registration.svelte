@@ -1,7 +1,7 @@
 <script>
-    import { nickname } from "../../stores/nicknameStore.js";
+    import { nicknameStore } from "../../stores/nicknameStore.js";
 
-    let nicknameInput;
+    let nickname;
 
     async function submitNickname() {
         await fetch("http://localhost:8080/nicknames", {
@@ -10,15 +10,14 @@
             headers: { 
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ nickname: nicknameInput }) 
+            body: JSON.stringify({ nickname }) 
         });
-        const response = await fetch("http://localhost:8080/nicknames");
-        const result = await response.json();
-        console.log(result);
         
-        nickname.set(nicknameInput);
+        nicknameStore.set(nickname);
+
+        localStorage.setItem("nickname", nickname);
     }
 </script>
 
-<input bind:value={nicknameInput} placeholder="nickname">
+<input bind:value={nickname} placeholder="nickname">
 <button on:click={submitNickname}>Submit Nickname</button>
