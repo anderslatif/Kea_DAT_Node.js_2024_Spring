@@ -260,7 +260,14 @@ a|
 * Can use MongoDB in Node.js given a code snippet for how to set it up.
 a|
 
-
+| 12. Sockets
+| May 17th
+a|
+* Web sockets with Socket.io in HTML and Svelte
+a|
+* Understands what Websockets are and the problem they solve. 
+* Can work with Socket.io in both client and server without having to look up how to listen to and emit events.
+a|
 
 |===
 
